@@ -1,18 +1,10 @@
+
 #!/usr/bin/python3
-
 import random
-from enum import IntEnum
-
-
-class DigitEnum(IntEnum):
-    ZERO = 0
-    ONE = 1
-
-
 number = random.randint(-10, 10)
-if number > DigitEnum.ZERO:
+if number > 0:
     print("{} is positive".format(number))
-elif number == DigitEnum.ZERO:
+elif number == 0:
     print("{} is zero".format(number))
 else:
-    print("{} is negative".format(number)
+    print("{} is negative".format(number))
